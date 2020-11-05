@@ -136,16 +136,19 @@ a.tabs-button.black:hover {
     background: #f0f0f0;
     display: inline-block;
     border-left: solid 10px #59aff5;
+    padding-right: 29%;
 }
 .box29 .box-title {
     font-size: 1.2em;
-    padding: 6px 16.6%;
+    padding-top: 15px;
+    padding-left: 20px;
     color: rgb(24, 24, 24);
     font-weight: bold;
     letter-spacing: 0.05em;
 }
 .box29 p {
-    padding: 15px 203px;
+    padding: 15px;
+    padding-left: 20px;
     margin: 0;
 }
 .box29 a.btn {
