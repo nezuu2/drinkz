@@ -134,20 +134,23 @@ a.tabs-button.black:hover {
 .box29 {
     margin: 2em 0.5rem;
     background: #f0f0f0;
-    text-align: center;
+    display: inline-block;
+    border-left: solid 10px #59aff5;
 }
 .box29 .box-title {
     font-size: 1.2em;
-    background: #59aff5;
-    padding: 6px;
-    text-align: center;
-    color: #FFF;
+    padding: 6px 16.6%;
+    color: rgb(24, 24, 24);
     font-weight: bold;
     letter-spacing: 0.05em;
 }
 .box29 p {
-    padding: 15px 150px;
+    padding: 15px 203px;
     margin: 0;
+}
+.box29 a.btn {
+  position: relative;
+  left: 38%;
 }
 .box29 ol {
   text-align: left;
