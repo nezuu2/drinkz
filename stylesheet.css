@@ -131,17 +131,6 @@ a.tabs-button.black:hover {
   color: white;
 }
 
-.box1 {
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  font-weight: bold;
-  border: solid 3px #000000;
-}
-.box1 p {
-  margin: 0; 
-  padding: 0;
-}
-
 .box29 {
     margin: 2em 0.5rem;
     background: #f0f0f0;
