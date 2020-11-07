@@ -4,9 +4,9 @@
 
 このサイトはDrinkzのホームページです。
 
-このサイトのリンク：https://nezuu2.github.io/drinkz.github.io/
+このサイトのリンク：https://nezuu2.github.io/drinkz/
 
-このサイトで使わせていただいた素材：https://nezuu2.github.io/drinkz.github.io/materials-used.html
+このサイトで使わせていただいた素材：https://nezuu2.github.io/drinkz/materials-used.html
 
 <!-- # Badges -->
 
