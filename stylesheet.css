@@ -469,3 +469,15 @@ a.button.black:active {
   height: auto;
   opacity: 1; /* 文字を表示 */
 }
+
+/** ボタン **/
+.disp-box2 a {
+  display: inline;
+  border-bottom: solid 4px #3b3b3b; /* ボタンの影部分 */
+  border-radius: 3px;               /* 角丸 */
+}
+.disp-box2 a:active {
+  transform: translateY(4px);
+  border-bottom: none;
+  transform: rotateZ(360deg);
+}
