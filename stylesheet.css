@@ -8,6 +8,15 @@ li {
   list-style: none;
 }
 
+.main {
+  overflow-x: auto;
+}
+.Horizontal {
+  margin: 2em 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   overflow: hidden;
   background-color: #ffffff;
@@ -47,7 +56,6 @@ a.tabs-button {
   color: rgb(0, 98, 255);
   text-decoration:none;
   font-size: 1.3rem;
-  border-bottom: 1px solid #f3faff;
 
   display: flex;
   transition: all 300ms 0s ease-out;
@@ -57,7 +65,7 @@ a.tabs-button:hover {
   text-decoration:none;
   font-size: 1.6rem;
   padding: 0px 15px;
-  border-bottom: 1px solid #dce8ff;
+  border-bottom: 1px solid #d4e4ff;
 }
 a.tabs-button.black {
   color: rgba(165, 177, 196, 0.596);
@@ -71,20 +79,12 @@ a.tabs-button.black:hover {
   box-shadow: 11px 0;
 }
 
-.wrapper{
-  height: 100%;
-  min-height: 100vh;
-  position: relative;/*←相対位置*/
-  padding-bottom: 120px;/*←footerの高さ*/
-  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-}
-
 .footer {
   background-color: #868686dc;
   color: #fff;
   z-index: 10;
-  height: 80px; 
   padding: 40px;
+  overflow-x: auto;
 }
 
 .footer-logo {
@@ -111,6 +111,7 @@ a.tabs-button.black:hover {
   padding: 0.5em;
   text-align: center;
   width: 8em; 
+  border-radius: 30px 30px;
 
   position:relative;
   bottom:10px;
@@ -131,11 +132,11 @@ a.tabs-button.black:hover {
 }
 
 .box29 {
-    margin: 2em 0.5rem;
     background: #f0f0f0;
     display: inline-block;
     border-left: solid 10px #59aff5;
-    padding-right: 29%;
+    padding-right: 2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
 }
 .box29 .box-title {
     font-size: 1.2em;
@@ -153,9 +154,6 @@ a.tabs-button.black:hover {
 .box29 a.btn {
   position: relative;
   left: 38%;
-}
-.box29 ol {
-  text-align: left;
 }
 
 .before-credo {
@@ -358,6 +356,7 @@ a.btn {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   text-decoration:none;
   transition: all 200ms 0s ease-out;
+  border-radius: 20px;
 }
 a.btn2 {
   color: rgb(255, 255, 255);
@@ -368,9 +367,9 @@ a.btn2 {
 }
 a.btn--black:hover {
   margin-top: 3px;
-  color: rgb(230, 233, 255);
+  color: rgb(221, 225, 255);
   background: #00c3ff;
-  border-bottom: 2px solid #9b9b9b;
+  border-bottom: 2px solid #dfdfdf;
 }
 a.btn--black:active {
   margin-top: 3px;
@@ -391,17 +390,15 @@ a.button {
   transition: all 300ms 0.01s ease-out
 }
 a.button:hover {
-  color: rgb(170, 170, 170);
-  background: #ececec;
-  float: none;
+  background: #7ae4ff;
+  border-radius: 30px 30px;
+  padding: 3%;
 }
 a.button:active {
-  background: #dbdbdb;
-  color: white;
-  float: none;
+  background: rgb(0, 159, 252);
 }
 a.button.black {
-  color: rgb(151, 151, 151);
+  color: rgb(255, 255, 255);
   background: #2c2c2c;
 }
 a.button.black:hover {
