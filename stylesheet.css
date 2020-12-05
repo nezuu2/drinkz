@@ -369,11 +369,11 @@ a.btn--black:hover {
   margin-top: 3px;
   color: rgb(221, 225, 255);
   background: #00c3ff;
-  border-bottom: 2px solid #dfdfdf;
+  border-bottom: 5px solid #3d9cf5;
 }
 a.btn--black:active {
   margin-top: 3px;
-  color: rgb(97, 185, 226);
+  color: rgb(255, 255, 255);
   background: #00d9ff;
   border-bottom: 2px solid #9b9b9b;
 }
@@ -391,11 +391,12 @@ a.button {
 }
 a.button:hover {
   background: #7ae4ff;
-  border-radius: 30px 30px;
+  border-radius: 30px 30px 20px 20px;
   padding: 3%;
 }
 a.button:active {
   background: rgb(0, 159, 252);
+  border-radius: 30px 30px;
 }
 a.button.black {
   color: rgb(255, 255, 255);
