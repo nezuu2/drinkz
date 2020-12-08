@@ -95,7 +95,7 @@ li {
 nav {
   display: flex;
   width: 100%;
-  background: rgba(17, 17, 17, 0.918);
+  background: rgba(0, 123, 180, 0.918);
   position: sticky;
   top: 0px;
   z-index: 1024;
@@ -118,7 +118,7 @@ nav li {
 }
 
 a.tabs-button {
-  color: rgb(212 212 212);
+  color: rgb(255, 255, 255);
   text-decoration:none;
   font-size: 1.3rem;
 
@@ -126,12 +126,12 @@ a.tabs-button {
   transition: all 300ms 0s ease-out;
 }
 a.tabs-button:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255);
   text-decoration:none;
 
-  background: #39393b;
-  box-shadow: 11px 0;
-  padding: 0px 6.5px;
+  background: rgb(0, 159, 233);
+  box-shadow: 0 1px;
+  padding: 0 3px;
 }
 a.tabs-button:active {
 
