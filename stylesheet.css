@@ -1,3 +1,34 @@
+html {
+  font-size: 5px;
+}
+@media only screen and (min-width:600px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width:1800px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width:1800px) {
+  html,
+  body {
+    font-size: 14.5px;
+  }
+}
+p {
+  font-size: 1.3rem;
+}
+
 body {
   font-family: "Avenir Next";
   background-color: #ffffff;
@@ -6,23 +37,22 @@ body {
 
 li {
   list-style: none;
+  font-size: 1.23rem;
 }
 
 .main {
-  overflow-x: auto;
-}
-.Horizontal {
-  margin: 2em 0.5rem;
-  display: flex;
-  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
 
 .header {
   overflow: hidden;
   background-color: #ffffff;
   color: rgb(58, 58, 58);
-  height: 150px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
+  height: 90px;
 }
 
 .header-logo {
@@ -37,23 +67,58 @@ li {
   font-size: 25px;
   padding: 28px 20px;
   letter-spacing: 0.05em;
+  padding-left: 0px;
+}
+
+.header a {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: 1px solid;
+  padding: 10px 18px;
+  
+  position: relative;
+  top: 22px;
+  left: 3%;
+}
+.header a:hover {
+  color: white;
+  border-color: gray;
+  background-color: #111;
+  transition: all 200ms 0s ease-out;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.301);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background: rgba(17, 17, 17, 0.918);
+  position: sticky;
+  top: 0px;
+  z-index: 1024;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
 nav ul {
   text-align: center;
-
   display: inline-flex;
-  position: absolute;
-  left: -1.5rem;
-  top: 3.2rem;
+  overflow-x: auto;
+  width: 100%;
+  margin: 0;
+  padding: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
 }
 
 nav li {
-  padding: 29px;
+  padding: 1.0rem 1.7rem;
 }
 
 a.tabs-button {
-  color: rgb(0, 98, 255);
+  color: rgb(212 212 212);
   text-decoration:none;
   font-size: 1.3rem;
 
@@ -61,21 +126,26 @@ a.tabs-button {
   transition: all 300ms 0s ease-out;
 }
 a.tabs-button:hover {
-  color: rgba(0, 98, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration:none;
-  font-size: 1.6rem;
-  padding: 0px 15px;
-  border-bottom: 1px solid #d4e4ff;
+
+  background: #39393b;
+  box-shadow: 11px 0;
+  padding: 0px 6.5px;
+}
+a.tabs-button:active {
+
 }
 a.tabs-button.black {
-  color: rgba(165, 177, 196, 0.596);
-  font-size: 1.3rem;
+  color: rgba(158, 158, 158, 0.596);
 }
 a.tabs-button.black:hover {
-  color: rgba(231, 231, 231, 0);
-  font-size: 1.6rem;
-
-  background: #ffffff;
+  background: #39393b;
+  box-shadow: 11px 0;
+}
+a.tabs-button.black:active {
+  color: rgba(255, 0, 0, 0.596);
+  background: #4b0000;
   box-shadow: 11px 0;
 }
 
@@ -83,24 +153,28 @@ a.tabs-button.black:hover {
   background-color: #868686dc;
   color: #fff;
   z-index: 10;
-  padding: 40px;
+  padding: 36px;
   overflow-x: auto;
 }
 
 .footer-logo {
   font-size: 32px;
   float: left;
+
 }
 
 .footer-list {
   float: left;
-  display: flex;
+  display: inline-flex;
   margin: 0 0 0 1em;
   width: 250px;
 }
 
 .footer-list ul {
-  display: flex
+  display: inline-flex;
+  padding: 0px;
+  position: relative;
+  left: 3px;
 }
 
 .footer-list li {
@@ -111,10 +185,10 @@ a.tabs-button.black:hover {
   padding: 0.5em;
   text-align: center;
   width: 8em; 
-  border-radius: 30px 30px;
 
   position:relative;
   bottom:10px;
+  border-radius: 22px;
 }
 
 .circle-shap {
@@ -129,31 +203,37 @@ a.tabs-button.black:hover {
 .text-background-circle.blue {
   background: linear-gradient(to right, blue, rgb(43, 153, 255), aqua);
   color: white;
+  cursor: pointer;
+}
+
+.Horizontal {
+    display: inline-flex;
 }
 
 .box29 {
+    margin: 2.1em 0.5rem;
+    margin-bottom: 3em;
     background: #f0f0f0;
-    display: inline-block;
-    border-left: solid 10px #59aff5;
-    padding-right: 2em;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
+    text-align: center;
 }
 .box29 .box-title {
     font-size: 1.2em;
-    padding-top: 15px;
-    padding-left: 20px;
-    color: rgb(24, 24, 24);
+    background: #59aff5;
+    padding: 6px;
+    text-align: center;
+    color: #FFF;
     font-weight: bold;
     letter-spacing: 0.05em;
 }
 .box29 p {
-    padding: 15px;
-    padding-left: 20px;
+    padding: 15px 150px;
     margin: 0;
 }
-.box29 a.btn {
-  position: relative;
-  left: 38%;
+.box29 a {
+  margin: 0.1rem;
+}
+.box29 ol {
+  text-align: left;
 }
 
 .before-credo {
@@ -162,7 +242,8 @@ a.tabs-button.black:hover {
 .credo {
     padding: 15px 20px;
     margin: 0;
-    display: inline-block
+    display: inline-block;
+    font-size: 1rem;
 }
 .credo li {
   margin-bottom: .5rem;
@@ -208,7 +289,7 @@ gray-out {
 .box29 .box-title--blue {
   font-size: 1.2em;
   background: #001e57;
-  padding: 6px;
+  padding: 12px;
   text-align: center;
   color: #FFF;
   font-weight: bold;
@@ -225,7 +306,7 @@ gray-out {
 }
 .box29 .box-title--news {
   font-size: 1.2em;
-  padding: 6px;
+  padding: 15px;
   text-align: center;
   color: #FFF;
   font-weight: bold;
@@ -252,6 +333,10 @@ gray-out {
   100% { background-color: #e74c3c; }
 }
 
+.left-and-right-handed-drawing {
+  padding: 0px;
+}
+
 .left-and-right-handed-drawing p {
   display: inline-block;
   margin: auto 35px;
@@ -264,15 +349,11 @@ gray-out {
 .left-and-right-handed-drawing img {
   display: inline-block;
   margin: auto 35px;
-  float: right;
+  display: inline-flex;
   
-  position: relative;
-  bottom: 3rem;
-  right: 6rem;
   transition: all 300ms 0s ease-in;
 }
 .left-and-right-handed-drawing:hover img {
-  width: 20em;
 }
 .left-and-right-handed-drawing li {
   margin: 0 auto;
@@ -288,23 +369,29 @@ gray-out {
 
 .board li {
   width: 500px;
-  height: 300px;
+  padding-bottom: 17px;
   background: rgba(0, 0, 0, 0.034);
-  margin: 0 auto;
+  margin: 5px auto;
   align-items: center;
   position: relative;
   right: 20px;
+  border-radius: 20px / 20px;
+  display: inline-grid;
 }
+
 .board p {
   color: black;
   margin: auto;
 }
 li-title {
+  font-size: 1.5rem;
+  color: #b10000;
   border-bottom: 2px solid #dd4b4b;
-  font-size: 20px;
   background: rgba(255, 17, 0, 0.123);
   display: block;
   transition: all 200ms 0s ease-in;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 
   /**グラデーションが合わなかったから追加しなかった
   background: linear-gradient(to right, rgb(255, 0, 64), pink);
@@ -313,13 +400,11 @@ li-title {
 li-title:hover {
   border-bottom: 2px solid #f03f3f;
   color: #f03f3f;
-  box-shadow: 11px 0;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.301);
 }
 
 .left-picture {
-  float: left;
-  position: absolute;
-  left: 10rem;
+  display: inline-flex;
 }
 .left-aligned {
   text-align: left;
@@ -355,29 +440,45 @@ a.btn {
   border-bottom: 5px solid #3d9cf5;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   text-decoration:none;
+  padding: 4px 20px;
+  border-radius: 24px / 24px;
   transition: all 200ms 0s ease-out;
-  border-radius: 20px;
+  font-size: 1rem;
 }
+a.btn--black:hover {
+  margin-top: 3px;
+  color: rgb(230, 233, 255);
+  background: #00c3ff;
+  border-bottom: 2px solid #9b9b9b;
+}
+a.btn--black:active {
+  margin-top: 3px;
+  color: rgb(97, 185, 226);
+  background: #00d9ff;
+  border-bottom: 2px solid #9b9b9b;
+}
+@media only screen and (min-width:600px) {
+  a.btn {
+    font-size: 5px;
+  }
+}
+@media only screen and (min-width:1800px) {
+  a.btn {
+    font-size: 18px;
+  }
+}
+
 a.btn2 {
   color: rgb(255, 255, 255);
   background-color: #4e4e4e;
   border-bottom: 5px solid #000000;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   text-decoration:none;
+  transition: all 300ms 0.01s ease-out;
+  padding: 0px 12px;
+  border-radius: 10px 10px;
 }
-a.btn--black:hover {
-  margin-top: 3px;
-  color: rgb(221, 225, 255);
-  background: #00c3ff;
-  border-bottom: 5px solid #3d9cf5;
-}
-a.btn--black:active {
-  margin-top: 3px;
-  color: rgb(255, 255, 255);
-  background: #00d9ff;
-  border-bottom: 2px solid #9b9b9b;
-}
-a.btn--black2:hover {
+a.btn2--black:hover {
   margin-top: 3px;
   color: rgba(51, 51, 51, 0.349);
   background: #ffffff;
@@ -390,16 +491,20 @@ a.button {
   transition: all 300ms 0.01s ease-out
 }
 a.button:hover {
-  background: #7ae4ff;
-  border-radius: 30px 30px 20px 20px;
+  color: rgb(156 156 156);
+  background: #ececec;
+  float: none;
+  border-radius: 0px 15px;
   padding: 3%;
 }
 a.button:active {
-  background: rgb(0, 159, 252);
-  border-radius: 30px 30px;
+  background: #dbdbdb;
+  color: white;
+  float: none;
+  border-radius: 24px / 23px;
 }
 a.button.black {
-  color: rgb(255, 255, 255);
+  color: rgb(151, 151, 151);
   background: #2c2c2c;
 }
 a.button.black:hover {
@@ -412,17 +517,14 @@ a.button.black:active {
 .copy-right {
   text-decoration:none;
   color: rgb(131, 131, 131);
-  margin-bottom: 50px;
   position: relative;
   left: 5px;
-  top: 10px;
   transition: all 300ms 0s ease;
 }
 .copy-right:hover {
   color: #c0c0c0;
   position: relative;
-  left: 5px;
-  top: 8px;
+  bottom: 2px;
 }
 
 .hidden {
@@ -439,7 +541,7 @@ a.button.black:active {
   font-weight: bold;                /* 文字の太さ */
   padding: 0.5em 1em;               /* ボタン内側の余白 */
   border-bottom: solid 4px #3b3b3b; /* ボタンの影部分 */
-  border-radius: 3px;               /* 角丸 */
+  border-radius: 24px / 23px;               /* 角丸 */
   cursor: pointer;                  /* ボタンにカーソルを合わせた時に指アイコンを表示 */
 }
 /** ボタンクリック時のボタンを押し込む動作 **/
@@ -466,16 +568,4 @@ a.button.black:active {
 .disp-box input:checked ~ .text {
   height: auto;
   opacity: 1; /* 文字を表示 */
-}
-
-/** ボタン **/
-.disp-box2 a {
-  display: inline;
-  border-bottom: solid 4px #3b3b3b; /* ボタンの影部分 */
-  border-radius: 3px;               /* 角丸 */
-}
-.disp-box2 a:active {
-  transform: translateY(4px);
-  border-bottom: none;
-  transform: rotateZ(360deg);
 }
