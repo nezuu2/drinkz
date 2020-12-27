@@ -122,14 +122,11 @@ a.tabs-button {
 }
 a.tabs-button:hover {
   color: rgb(255, 255, 255);
-  text-decoration:none;
 
   background: rgb(0, 159, 233);
   box-shadow: 0 1px;
+  transition: box-shadow 200ms 0s ease-out;
   padding: 0 3px;
-}
-a.tabs-button:active {
-
 }
 a.tabs-button.black {
   color: rgba(158, 158, 158, 0.596);
