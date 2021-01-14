@@ -92,26 +92,6 @@ li {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.301);
 }
 
-nav {
-  display: flex;
-  width: 100%;
-  background: rgba(0, 123, 180, 0.918);
-}
-
-nav ul {
-  text-align: center;
-  display: inline-flex;
-  overflow-x: auto;
-  width: 100%;
-  margin: 0;
-  padding: 3px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
-}
-
-nav li {
-  padding: 1.0rem 1.7rem;
-}
-
 a.tabs-button {
   color: rgb(255, 255, 255);
   text-decoration:none;
@@ -158,6 +138,26 @@ iframe.nav {
   z-index: 1024;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(24px);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background: rgba(0, 123, 180, 0.918);
+}
+
+nav ul {
+  text-align: center;
+  display: inline-flex;
+  overflow-x: auto;
+  width: 100%;
+  margin: 0;
+  padding: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+nav li {
+  padding: 1.0rem 1.7rem;
 }
 
 .footer {
